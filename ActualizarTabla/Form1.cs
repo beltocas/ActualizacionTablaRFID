@@ -114,36 +114,7 @@ namespace ActualizarTabla
                 Console.WriteLine(ex.Message);
             }
 
-            /*BindingSource dataSource = new BindingSource();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable table = new DataTable();
-
-            try
-            {
-                table = new DataTable();
-                dataSource = new BindingSource();
-                adapter = new SqlDataAdapter();
-                table.Locale = System.Globalization.CultureInfo.InvariantCulture;
-
-                consulta.CommandText = "SELECT * FROM tabla_1 ORDER BY id ASC";
-                adapter.SelectCommand = consulta;
-
-                adapter.Fill(table);
-
-                tabla_1.Hide();
-
-                dataSource.DataSource = table;
-
-                tabla_1.DataSource = dataSource;
-
-                tabla_1.Refresh();
-
-                tabla_1.Show();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }*/
+            
         }
 
     }
