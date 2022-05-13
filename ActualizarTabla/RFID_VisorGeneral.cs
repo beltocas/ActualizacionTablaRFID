@@ -136,5 +136,6 @@ namespace ActualizarTabla
             RFID_CentroAdmin administrador = new RFID_CentroAdmin();
             administrador.Show();
         }
+
     }
 }
