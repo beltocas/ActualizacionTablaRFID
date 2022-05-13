@@ -20,7 +20,9 @@ namespace ActualizarTabla
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            RFID_NuevoRFID administrador = new RFID_NuevoRFID();
+            administrador.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
