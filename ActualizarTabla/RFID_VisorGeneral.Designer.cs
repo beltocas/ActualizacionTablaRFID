@@ -58,14 +58,15 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(100)))), ((int)(((byte)(218)))));
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Name = "label1";
             // 
             // button2
             // 
             resources.ApplyResources(this.button2, "button2");
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(100)))), ((int)(((byte)(218)))));
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.CausesValidation = false;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
@@ -90,7 +91,7 @@
             this.tabla_1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.tabla_1, "tabla_1");
             this.tabla_1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.tabla_1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(100)))), ((int)(((byte)(218)))));
+            this.tabla_1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.tabla_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tabla_1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.tabla_1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -179,7 +180,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(100)))), ((int)(((byte)(218)))));
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.tabla_1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
