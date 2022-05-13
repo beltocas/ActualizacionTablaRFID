@@ -136,13 +136,10 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 15</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>487, 18</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>364, 47</value>
+    <value>455, 59</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -174,43 +171,17 @@
   <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABLNJREFUeF7t
-        ms3rFVUYx68lFWWJZoWQUCEuslX9BYlBG8lESaGlgb2Q2qqVYNkL1taFEGURWen/oYIu7A1Xtc/aqFhW
-        qN/PL7/0dLhz5szc39wZdb7wgXvPPS/Pee7Mmec5cyajRo0aNWrUqFEda7O4KK4VQt0XxC2jr8W0ieY4
-        Km46PSiW/vvxf/pWeGJ8zhHrpaJvxhikdot/xFnxCAVBcWJ1cr1vFr79J/r8TjAGYw1Ke4QNh3NitbBK
-        HbBEuB63jfWw+EH4N3hbDEJ7RTTM/CieFu+I32+UwR2iSvzmer8J2tIHfbk8wti9Kk7+b7FTnAxlKT+L
-        OlFnWlugb8ZgLJf15oR08i8JtFykTvhVHBKPizpRh7rnReyDPukbbRe9OqFq8haGHhP+x+4STXW38BXF
-        GuLJW9EJV8VTYi6qm/w8hRP+EpfEGgq6Fo+foUzeelTwiHxA7BObRCciAOEZbAdweQ5Fcd3hj8EZiy6i
-        MIIcOyAuSn0qTh6w8U7RiQhIvhce7IxYKZpoldgmPhSHxRHxvtghVogmSiefBmCdiPstBias9iVaK74U
-        fwq3TeG3r0TJ4xIdF26LTWkI3pmeER6Yf6BOhMqXhdvU8Yd4Q9Qp/vvYNDe9Kzxw3WL4kXBdIKHhabJe
-        3HcDPlMWby/4WOT0inBdwuZOtEWQmBCMGMf2RHi5IOc1YQO5vF8VuVyAxet1cUW4HW2qRLCEDdTDpmgj
-        +wmLsqmS28khZK3SOsGlTD0m/6wo1QZhJ9A2tyZgQ7Qpgu0za1rHQNKSM+wL4bq7KGgo1gC3Z/Gs0hMi
-        l0DNLHfEZVUqHmeO07nnc5d9lbgdvAfAVdAk5sBW2z2z3FETBxAiu90suzcx7yBOKFXvDvhAuN2TFLQU
-        GZ77OUBBoXp3wGfC7e6noKVo635YU0rVuwMcJ/y08K29ogM+oaBQvTuABew58dDCt/aKt8BBCgrVuwPQ
-        PeJ5MUvGGBfBrRQUahAO+FTQ7pRo+xh00kVQRBZZqk4ckPKLIAipEmmu6+bC2Sq9Kdz+cwoqhA3Y4rop
-        M+uCmNYx5ELhx4QzQEJiwttSbRTs9dGWPgirq5QLhbF9Zr0ocskQCUmVYjiLE0h06pIh/nlPHnJpMWN7
-        +zxNhrCZt9KdiNTTBtalw6zergukvEySFPhesUyw2r8l0jdA7BrlFNPh/RTMS7yu8sAlGyIkQ8TzblMH
-        lz1XS5162RBpuyXGYkVWF3P9FH5j8czd81FxS4ygq/MtsXRT9LRos5HJC433BA4hwmPnh+d808CJvk4I
-        29Pppuhtvy3O9vdQX4xgi+3CxqZXZbGG+GoMG7z5ArPsPxQpngbB2y+LvsQLljj5uZ0aafJ6nGd1Lliq
-        Em1oSy5BX+l6k/7z2DRXVTkhXZSAaI2QNZc7WNShbu6ARO+Tt1InsBilk4+UHJHJJTb0zRiDmLwVnRAh
-        MCE6I2zmwJPLc7kAv7kesT07S/SRhsim98lbdcfkOPPn33KKx+TiOcE0AIPBHJOzePzwVJh2ULLUAcj1
-        yOii6JO+GaPzR11bEYAs1lHZaTkGfXcW5HSpNoel40nRm15tjst3tpkxatSoUaNGjRo1mUwm1wG0poYG
-        UWN4FQAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>978, 15</value>
+    <value>1304, 18</value>
   </data>
   <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 47</value>
+    <value>83, 58</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -266,16 +237,16 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1957, 37</value>
+    <value>2609, 46</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 118</value>
+    <value>133, 145</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -310,17 +281,26 @@
   <data name="Column1.HeaderText" xml:space="preserve">
     <value>MATERIAL</value>
   </data>
+  <data name="Column1.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="Column2.HeaderText" xml:space="preserve">
     <value>DESCRIPCION</value>
   </data>
+  <data name="Column2.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="Column3.HeaderText" xml:space="preserve">
     <value>CODIGO TAG</value>
+  </data>
+  <data name="Column3.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="Column3.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -331,11 +311,17 @@
   <data name="Column4.HeaderText" xml:space="preserve">
     <value>CANTIDAD</value>
   </data>
+  <data name="Column4.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="Column5.HeaderText" xml:space="preserve">
     <value>ANTENA</value>
+  </data>
+  <data name="Column5.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -343,11 +329,20 @@
   <data name="Column6.HeaderText" xml:space="preserve">
     <value>HORA REGISTRO</value>
   </data>
+  <data name="Column6.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="tabla_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 76</value>
+    <value>15, 94</value>
+  </data>
+  <data name="tabla_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabla_1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="tabla_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1041, 593</value>
+    <value>1388, 730</value>
   </data>
   <data name="tabla_1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -371,10 +366,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1064, 681</value>
+    <value>1419, 838</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

@@ -43,5 +43,7 @@ namespace ActualizarTabla
         {
             this.Hide();
         }
+
+        
     }
 }

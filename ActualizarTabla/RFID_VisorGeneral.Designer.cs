@@ -66,6 +66,7 @@
             // 
             resources.ApplyResources(this.button2, "button2");
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.BackgroundImage = global::ActualizarTabla.Properties.Resources.Config;
             this.button2.CausesValidation = false;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Name = "button2";

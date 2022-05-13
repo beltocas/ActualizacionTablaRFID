@@ -19,6 +19,7 @@ namespace ActualizarTabla
         public RFID_ConfigIP()
         {
             InitializeComponent();
+            traerIP.Text = "Esto es una prueba".ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,25 +31,26 @@ namespace ActualizarTabla
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //string numeroIp = Convert.ToString(nomIP);
-            //string tiempo = Convert.ToString(time);
+            string numeroIp = Convert.ToString(nomIP);
+            string tiempo = Convert.ToString(time);
 
-            //consulta.Connection = db.Conectar();
-            //consulta.CommandText = "dbo.sp_insertarIp";
-            //SqlCommand sentencia = new SqlCommand(consulta.CommandText, consulta.Connection);
-            //sentencia.Parameters.AddWithValue("@numeroIP", numeroIp);
+            consulta.Connection = db.Conectar();
+            consulta.CommandText = "dbo.sp_insertarIp";
+            SqlCommand sentencia = new SqlCommand(consulta.CommandText, consulta.Connection);
+            sentencia.Parameters.AddWithValue("@numeroIP", numeroIp);
 
-            //try
-            //{
-            //    sentencia.ExecuteNonQuery();
-            //    MessageBox.Show("Actualizacion Completada");
-            //    this.Hide();
+            try
+            {
+                sentencia.ExecuteNonQuery();
+                MessageBox.Show("Actualizacion Completada");
+                this.Hide();
 
-            //}catch (SqlException ex)
-            //{
-            //    MessageBox.Show(ex.ToString());
-            //    throw;
-            //}
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+                throw;
+            }
 
             MessageBox.Show("Actualizacion Completa");
             this.Hide();
