@@ -38,13 +38,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.traerIP = new System.Windows.Forms.Label();
+            this.buscarIP = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 159);
+            this.label1.Location = new System.Drawing.Point(65, 159);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 20);
             this.label1.TabIndex = 0;
@@ -54,15 +55,16 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 214);
+            this.label2.Location = new System.Drawing.Point(65, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Intervalo de tiempo :";
+            this.label2.Visible = false;
             // 
             // nomIP
             // 
-            this.nomIP.Location = new System.Drawing.Point(229, 159);
+            this.nomIP.Location = new System.Drawing.Point(219, 159);
             this.nomIP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nomIP.Name = "nomIP";
             this.nomIP.Size = new System.Drawing.Size(196, 22);
@@ -70,11 +72,12 @@
             // 
             // time
             // 
-            this.time.Location = new System.Drawing.Point(229, 214);
+            this.time.Location = new System.Drawing.Point(219, 214);
             this.time.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(196, 22);
             this.time.TabIndex = 3;
+            this.time.Visible = false;
             // 
             // label3
             // 
@@ -128,11 +131,26 @@
             // traerIP
             // 
             this.traerIP.AutoSize = true;
+            this.traerIP.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.traerIP.ForeColor = System.Drawing.Color.White;
             this.traerIP.Location = new System.Drawing.Point(75, 111);
             this.traerIP.Name = "traerIP";
             this.traerIP.Size = new System.Drawing.Size(50, 20);
             this.traerIP.TabIndex = 8;
             this.traerIP.Text = "lalbel";
+            // 
+            // buscarIP
+            // 
+            this.buscarIP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buscarIP.FlatAppearance.BorderSize = 0;
+            this.buscarIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buscarIP.Location = new System.Drawing.Point(417, 179);
+            this.buscarIP.Name = "buscarIP";
+            this.buscarIP.Size = new System.Drawing.Size(40, 37);
+            this.buscarIP.TabIndex = 9;
+            this.buscarIP.UseVisualStyleBackColor = true;
+            this.buscarIP.Visible = false;
+            this.buscarIP.Click += new System.EventHandler(this.buscarIP_Click);
             // 
             // RFID_ConfigIP
             // 
@@ -140,6 +158,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(491, 426);
+            this.Controls.Add(this.buscarIP);
             this.Controls.Add(this.traerIP);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
@@ -171,5 +190,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label traerIP;
+        private System.Windows.Forms.Button buscarIP;
     }
 }

@@ -127,6 +127,7 @@
             this.tabla_1.RowHeadersVisible = false;
             this.tabla_1.RowTemplate.Height = 50;
             this.tabla_1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            
             // 
             // Column1
             // 
