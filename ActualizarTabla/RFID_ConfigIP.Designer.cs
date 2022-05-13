@@ -102,7 +102,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 8F);
-            this.label4.Location = new System.Drawing.Point(12, 502);
+            this.label4.Location = new System.Drawing.Point(12, 500);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(426, 19);
             this.label4.TabIndex = 7;

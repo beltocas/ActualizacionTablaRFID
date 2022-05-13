@@ -40,10 +40,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(143, 75);
+            this.label1.Font = new System.Drawing.Font("Lucida Bright", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(97, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(550, 61);
+            this.label1.Size = new System.Drawing.Size(665, 67);
             this.label1.TabIndex = 2;
             this.label1.Text = "Centro de Administración";
             this.label1.UseCompatibleTextRendering = true;

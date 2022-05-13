@@ -176,9 +176,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Lucida Bright", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(175, 49);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(168, 16);
+            this.label7.Size = new System.Drawing.Size(219, 19);
             this.label7.TabIndex = 15;
             this.label7.Text = "Modificacion de un Reader";
             // 
