@@ -48,6 +48,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB.cs" />
+    <Compile Include="RFID_ConfigIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFID_ConfigIP.Designer.cs">
+      <DependentUpon>RFID_ConfigIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RFID_Modificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFID_Modificacion.Designer.cs">
+      <DependentUpon>RFID_Modificacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="RFID_NuevoRFID.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +80,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="RFID_ConfigIP.resx">
+      <DependentUpon>RFID_ConfigIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFID_Modificacion.resx">
+      <DependentUpon>RFID_Modificacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RFID_NuevoRFID.resx">
       <DependentUpon>RFID_NuevoRFID.cs</DependentUpon>
     </EmbeddedResource>
