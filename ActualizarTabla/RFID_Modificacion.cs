@@ -23,5 +23,23 @@ namespace ActualizarTabla
             RFID_CentroAdmin administrador = new RFID_CentroAdmin();
             administrador.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string readerNombre = Convert.ToString(nomReader);
+            
+                an1.Text = "A01-202".ToString();
+                an2.Text = "A03-203".ToString();
+                an3.Text = "A05-102".ToString();
+                an4.Text = "A04-002".ToString();
+            
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Modificacion realizada");
+            this.Hide();
+        }
     }
 }
