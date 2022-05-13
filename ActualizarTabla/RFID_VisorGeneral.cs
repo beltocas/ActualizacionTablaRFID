@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace ActualizarTabla
 {
-    public partial class Form1 : Form
+    public partial class RFID_VisorGeneral : Form
     {
         DB db = new DB();
         SqlCommand consulta = new SqlCommand();
@@ -20,7 +20,7 @@ namespace ActualizarTabla
         SqlDataReader resultado;
         int n_filas = 0;
 
-        public Form1()
+        public RFID_VisorGeneral()
         {
             InitializeComponent();
 
@@ -117,5 +117,24 @@ namespace ActualizarTabla
             
         }
 
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.F1)
+            {
+                this.Hide();
+                RFID_CentroAdmin administrador = new RFID_CentroAdmin();
+                administrador.Show();
+            }
+            else
+            {
+                Console.WriteLine("Hola esto no funciona");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            RFID_CentroAdmin administrador = new RFID_CentroAdmin();
+            administrador.Show();
+        }
     }
 }
