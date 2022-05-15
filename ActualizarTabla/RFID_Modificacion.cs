@@ -76,21 +76,27 @@ namespace ActualizarTabla
             SqlConnection conn = db.Conectar();
             for (int item = 0; item < antenasView.Rows.Count - 1; item++)
             {
-                SqlCommand cmd2 = new SqlCommand("Update antena  set antena.num_antena = @numAntena, antena.descr = @nombre from antena INNER JOIN reader as rd ON antena.reader = rd.id WHERE rd.descr like @idReader and antena.num_antena like @numero",conn);
-                SqlCommand cmd3 = new SqlCommand("Update reader set reader.descr = @actuReader from reader INNER JOIN antena ON  reader.id = antena.reader WHERE reader.descr like @idReader1",conn);
+                SqlCommand cmd2 = new SqlCommand("Update antena  set antena.num_antena = @numAntena, antena.descr = @nombre from antena INNER JOIN reader as rd ON antena.reader = rd.id WHERE rd.descr like @idReader and antena.num_antena like @numero", conn);
+                SqlCommand cmd3 = new SqlCommand("Update reader set reader.descr = @actuReader from reader INNER JOIN antena ON  reader.id = antena.reader WHERE reader.descr like @idReader1", conn);
                 cmd2.Parameters.AddWithValue("@idReader", nomReader.Text.ToString());
                 cmd3.Parameters.AddWithValue("@idReader1", nomReader.Text.ToString());
                 cmd2.Parameters.AddWithValue("@numero", antenasView.Rows[item].Cells[0].Value);
                 cmd3.Parameters.AddWithValue("@actuReader", antenasView.Rows[0].Cells[2].Value);
                 cmd2.Parameters.AddWithValue("@nombre", antenasView.Rows[item].Cells[1].Value);
                 cmd2.Parameters.AddWithValue("@numAntena", antenasView.Rows[item].Cells[0].Value);
-                
+
                 cmd2.ExecuteNonQuery();
                 cmd3.ExecuteNonQuery();
-                //conn.Close();
+
+                //SqlCommand consulta = new SqlCommand(string.Format("EXEC sp_update @numAntena, @descripAntena,@nombreReader, @actNombrReader"), conn);
+
+                //consulta.Parameters.AddWithValue("@nombreReader", nomReader.Text.ToString());
+                //consulta.Parameters.AddWithValue("@descripAntena", antenasView.Rows[item].Cells[1].Value);
+                //consulta.Parameters.AddWithValue("@actNombrReader", antenasView.Rows[0].Cells[2].Value);
+                //consulta.Parameters.AddWithValue("@numAntena", antenasView.Rows[item].Cells[0].Value);
             }
             MessageBox.Show("Modificacion realizada");
-            this.Hide();
+            //this.Hide();
         }
 
         
