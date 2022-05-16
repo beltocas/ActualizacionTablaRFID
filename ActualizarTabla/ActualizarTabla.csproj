@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="nomReader.cs" />
     <Compile Include="DB.cs" />
     <Compile Include="RFID_ConfigIP.cs">
       <SubType>Form</SubType>

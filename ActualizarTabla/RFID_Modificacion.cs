@@ -15,18 +15,26 @@ namespace ActualizarTabla
     {
         
         DB db = new DB();
-        //SqlDataReader resultado;
+        
         SqlDataAdapter adaptador;
         SqlCommandBuilder scb;
         DataTable dt;
 
-        //SqlCommandBuilder sqlCommand = null;
-        //SqlDataAdapter sqlAdapter = null;
-        //DataSet dataset = null;
+        nomReader nombreReaderBox = new nomReader();
+
+        private void RFID_Modificacion_Load(object sender, EventArgs e)
+        {
+
+            cboNomReader.DataSource = nombreReaderBox.CargarCombo();
+            cboNomReader.DisplayMember = "descr";
+
+            //cboNomReader.ValueMember = "id";
+        }
 
         public RFID_Modificacion()
         {
             InitializeComponent();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,31 +46,11 @@ namespace ActualizarTabla
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Por si no guardo
-            string readerNombre = Convert.ToString(nomReader);
-
-            //an1.Text = "Principal".ToString();
-            //an2.Text = "Secunadira".ToString();
-            //an3.Text = "Salida".ToString();
-            //an4.Text = "Entrada".ToString();
-            /* Continuar conexxion*/
-            //SqlConnection conn = db.Conectar();
-            //SqlCommand consulta = new SqlCommand(string.Format("SELECT * FROM antena INNER JOIN reader ON antena.reader = reader.id WHERE reader.descr like @dsc "), conn);
-            //consulta.Parameters.AddWithValue("@dsc", nomReader.Text.ToString());
-
-            //SqlDataReader registro = consulta.ExecuteReader();
-            //if (registro.Read())
-            //{
-            //    an1.Text = registro["num_antena"].ToString();
-            //    an2.Text = registro["num_antena"].ToString();
-            //    an3.Text = registro["num_antena"].ToString();
-            //    an4.Text = registro["num_antena"].ToString();
-            //}
 
 
             SqlConnection conn = db.Conectar();
             SqlCommand consulta = new SqlCommand(string.Format("SELECT antena.num_antena as NumeroAntena, antena.descr as Nombre, reader.descr as NombreReader FROM antena INNER JOIN reader ON antena.reader = reader.id WHERE reader.descr like @dsc "), conn);
-            consulta.Parameters.AddWithValue("@dsc", nomReader.Text.ToString());
+            consulta.Parameters.AddWithValue("@dsc", cboNomReader.Text.ToString());
             adaptador = new SqlDataAdapter(consulta);
             dt = new DataTable();
             dt.Clear();
@@ -78,8 +66,8 @@ namespace ActualizarTabla
             {
                 SqlCommand cmd2 = new SqlCommand("Update antena  set antena.num_antena = @numAntena, antena.descr = @nombre from antena INNER JOIN reader as rd ON antena.reader = rd.id WHERE rd.descr like @idReader and antena.num_antena like @numero", conn);
                 SqlCommand cmd3 = new SqlCommand("Update reader set reader.descr = @actuReader from reader INNER JOIN antena ON  reader.id = antena.reader WHERE reader.descr like @idReader1", conn);
-                cmd2.Parameters.AddWithValue("@idReader", nomReader.Text.ToString());
-                cmd3.Parameters.AddWithValue("@idReader1", nomReader.Text.ToString());
+                cmd2.Parameters.AddWithValue("@idReader", cboNomReader.Text.ToString());
+                cmd3.Parameters.AddWithValue("@idReader1", cboNomReader.Text.ToString());
                 cmd2.Parameters.AddWithValue("@numero", antenasView.Rows[item].Cells[0].Value);
                 cmd3.Parameters.AddWithValue("@actuReader", antenasView.Rows[0].Cells[2].Value);
                 cmd2.Parameters.AddWithValue("@nombre", antenasView.Rows[item].Cells[1].Value);

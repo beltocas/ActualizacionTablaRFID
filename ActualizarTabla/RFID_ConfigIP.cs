@@ -17,6 +17,7 @@ namespace ActualizarTabla
         SqlCommand consulta = new SqlCommand();
         DB db = new DB();
         SqlDataReader resultado;
+        string ipActual=null;
         public RFID_ConfigIP()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace ActualizarTabla
             if (resultado.Read())
             {
                 traerIP.Text = "IP Actual: ".ToString() + resultado["valor_parametro"].ToString();
+                ipActual = resultado["valor_parametro"].ToString();
                 nomIP.Text = resultado["valor_parametro"].ToString();
             }
             
@@ -64,21 +66,19 @@ namespace ActualizarTabla
             //    throw;
             //}
 
+            SqlConnection conn = db.Conectar();
+            SqlCommand consulta = new SqlCommand(string.Format("UPDATE parametros SET valor_parametro = @ipNuevo WHERE valor_parametro = @ipActual"), conn);
+            consulta.Parameters.AddWithValue("@ipActual", ipActual);
+            consulta.Parameters.AddWithValue("@ipNuevo", nomIP.Text.ToString());
+            consulta.ExecuteNonQuery();
+
+
             MessageBox.Show("Actualizacion Completa");
             this.Hide();
         }
 
-        private void buscarIP_Click(object sender, EventArgs e)
-        {
-            SqlConnection conn = db.Conectar();
-            SqlCommand sentencia = new SqlCommand(string.Format("EXEC sp_getIP"), conn);
+        
 
-            //string texto
-            resultado = sentencia.ExecuteReader();
-            if (resultado.Read())
-            {
-                nomIP.Text = resultado["valor_parametro"].ToString();
-            }
-        }
+      
     }
 }
