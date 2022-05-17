@@ -41,6 +41,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -53,13 +54,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Text", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
-            this.label1.Location = new System.Drawing.Point(44, 16);
+            this.label1.Location = new System.Drawing.Point(125, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(660, 60);
+            this.label1.Size = new System.Drawing.Size(505, 52);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Centro de Administración";
+            this.label1.Text = "CENTRO DE ADMINISTRACIÓN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseCompatibleTextRendering = true;
             // 
@@ -130,7 +131,7 @@
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(631, 334);
+            this.button4.Location = new System.Drawing.Point(627, 336);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(88, 66);
@@ -164,7 +165,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(54, 131);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 25);
+            this.label5.Size = new System.Drawing.Size(111, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "Configuración";
             // 
@@ -174,7 +175,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(756, 81);
+            this.panel1.Size = new System.Drawing.Size(759, 81);
             this.panel1.TabIndex = 8;
             // 
             // panel2
@@ -183,7 +184,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(42, 129);
+            this.panel2.Location = new System.Drawing.Point(41, 129);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(206, 177);
             this.panel2.TabIndex = 9;
@@ -194,7 +195,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(276, 129);
+            this.panel3.Location = new System.Drawing.Point(278, 129);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(206, 177);
             this.panel3.TabIndex = 10;
@@ -205,26 +206,39 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(507, 129);
+            this.panel4.Location = new System.Drawing.Point(513, 129);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(206, 177);
             this.panel4.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(126)))), ((int)(((byte)(140)))));
+            this.label2.Location = new System.Drawing.Point(352, 444);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(403, 17);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Todos los derechos reservados T-consulting & general services SAC®";
             // 
             // RFID_CentroAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(756, 464);
+            this.ClientSize = new System.Drawing.Size(758, 464);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(774, 511);
-            this.MinimumSize = new System.Drawing.Size(774, 511);
+            this.MaximumSize = new System.Drawing.Size(758, 464);
+            this.MinimumSize = new System.Drawing.Size(758, 464);
             this.Name = "RFID_CentroAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
@@ -237,6 +251,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -254,5 +269,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label2;
     }
 }

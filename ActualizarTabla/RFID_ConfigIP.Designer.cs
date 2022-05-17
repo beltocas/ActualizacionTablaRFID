@@ -38,6 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.traerIP = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,11 +87,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(126)))), ((int)(((byte)(140)))));
-            this.label3.Location = new System.Drawing.Point(152, 7);
+            this.label3.Location = new System.Drawing.Point(136, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 28);
+            this.label3.Size = new System.Drawing.Size(234, 28);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Configuracion de IP";
+            this.label3.Text = "CONFIGURACIÓN DE IP";
             // 
             // button1
             // 
@@ -138,15 +139,27 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(491, 46);
+            this.panel1.Size = new System.Drawing.Size(496, 46);
             this.panel1.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(242)))));
+            this.label4.Location = new System.Drawing.Point(91, 350);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(403, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Todos los derechos reservados T-consulting & general services SAC®";
             // 
             // RFID_ConfigIP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(126)))), ((int)(((byte)(140)))));
-            this.ClientSize = new System.Drawing.Size(491, 369);
+            this.ClientSize = new System.Drawing.Size(496, 371);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.traerIP);
             this.Controls.Add(this.button2);
@@ -155,6 +168,7 @@
             this.Controls.Add(this.nomIP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(527, 555);
@@ -179,5 +193,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label traerIP;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -56,8 +56,10 @@ namespace ActualizarTabla
 
                 int i = 0;
                 tabla_1.Rows.Clear();
+
                 while (resultado.Read())
                 {
+
                     List<String> datos = new List<string>();
                     for (int c = 0; c < resultado.FieldCount; c++)
                     {
@@ -69,12 +71,11 @@ namespace ActualizarTabla
 
                         datos.Add(resultado.GetValue(c).ToString());
                     }
-
+                    
                     tabla_1.Rows.Add(datos);
 
                     i++;
-                }
-
+                };
                 n_filas = i;
                 resultado.Close();
             }
@@ -98,10 +99,12 @@ namespace ActualizarTabla
                         for (int c = 0; c < resultado.FieldCount; c++)
                         {
                             tabla_1.Rows[i].Cells[c].Value = resultado.GetValue(c).ToString();
+                            
                         }
+                        i++;
                     }
+                    //i++;
 
-                    i++;
                 }
                 resultado.Close();
 

@@ -67,9 +67,9 @@ namespace ActualizarTabla
             //}
 
             SqlConnection conn = db.Conectar();
-            SqlCommand consulta = new SqlCommand(string.Format("UPDATE parametros SET valor_parametro = @ipNuevo WHERE valor_parametro = @ipActual"), conn);
-            consulta.Parameters.AddWithValue("@ipActual", ipActual);
-            consulta.Parameters.AddWithValue("@ipNuevo", nomIP.Text.ToString());
+            SqlCommand consulta = new SqlCommand(string.Format("EXEC sp_insertarIp @numeroIP"), conn);
+            //consulta.Parameters.AddWithValue("@ipActual", ipActual);
+            consulta.Parameters.AddWithValue("@numeroIP", nomIP.Text.ToString());
             consulta.ExecuteNonQuery();
 
 
